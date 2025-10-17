@@ -1,0 +1,335 @@
+
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width,
+    <meta charset="UTF-8">
+	initial-scale=1.0">
+	<title>Speakers</title>
+	<link rel="stylesheet" href="styles.css">
+	  <style>
+
+.section-with-bg {
+      background-image: url('Kafka-2.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 200vh; /* Adjust height as needed */
+      color: white; /* Set text color to contrast with background */
+      background-color: #333;
+    }
+
+.section-title {
+    font-size: 2em; /* Adjust size as needed */
+    text-align: left; /* Aligns text to the left */
+    margin: 10px 0; /* Adds some space above and below */
+    padding-left: 220px; /* Align with the speaker names */
+    font-weight: bold; /* Makes it stand out */
+    color: red;
+}
+
+    /* CSS for the section without background image */
+    .section-no-bg {
+      height: 100vh; /* Adjust height as needed */
+      background-color: #333; /* Set background color to whatever you want */
+    }
+#footer {
+  background-color: #333; /* Change as needed */
+  padding: 20px;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly */
+  flex-wrap: wrap; /* Allows items to wrap if necessary */
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column; /* Aligns image and label vertically */
+  align-items: center; /* Centers items horizontally */
+  margin: 10px; /* Adds spacing between items */
+}
+
+.contact-item img {
+  height: 90px; /* Adjust height as needed */
+  width: 90px; /* Adjust width as needed */
+  margin-bottom: 5px; /* Adds space between the image and label */
+}
+
+.contact-item span {
+  text-align: center; /* Centers the label text */
+  font-size: 14px; /* Adjust font size if needed */
+  line-height: 1.2; /* Adjust line height for better spacing */
+}
+
+
+a{color: #b8860b; text-decoration:none;}
+a.current{color: #52739e;}
+a.current:hover{color: #8B8000 ;}
+a:hover{color: #8B8000 ;}
+a:active{color: #8B8000 ;}
+
+h2,h3{clear:left; color: #8B8000 ; margin:1.5em 0em 1em 0em;}
+h1{font-size:2.67em;}
+h2{font-size:2.00em;}
+h3{font-size:1.67em;}
+h4{font-size:1.33em;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+
+
+i,em{font-style:italic;}
+b,strong{font-weight:bold;}
+sup{
+    vertical-align: super;
+    font-size: 0.8em;
+    line-height: 0;
+}
+sub{
+    vertical-align: sub;
+    font-size: 0.8em;
+    line-height: 0;
+}
+table{
+    width: 1000px;
+    margin: 12px auto 24px auto;
+    float: center;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+th,td{
+    text-align: left;
+    /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
+    /*border: 1px solid black;*/
+}
+
+h2.h2-session-info{ text-align: center;
+    color: white;
+}
+
+speaker-table{
+    width: 100%; /* Ensure the table spans the full width of its container */
+}
+
+.Speaker {
+    width: 30%; /* Set the width of the first cell to 30% */
+}
+
+.speaker-name {
+    width: 70%; /* Set the width of the second cell to 70% */
+}
+
+/* The Table on the Program Page */
+td.room{padding: 4px 12px 4px 4px; width: 90%; vertical-align:bottom; font-size:1.67em; color: #52739e; height:32px;}
+td.date{white-space:nowrap; width:130px; text-align:right; vertical-align:top; padding:4px 16px 0px 0px;}
+td.title{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.5em; color: white; height:32px;}
+td.title-special{padding: 4px 12px 4px 4px; width: 90%; vertical-align:top; font-size:1.67em; color: #52739e; height:32px; }
+td.speaker{padding: 4px 12px 4px 4px; font-style: italic; font-size:1em; max-height:999999px}
+td.abstract{padding: 4px 12px 12px 4px; font-size:1em; max-height:999999px}
+td.abstract img{display: block; margin: 4px auto 8px auto}
+
+/* My hacky way of making the site mobile-friendly */
+@media only screen and (max-width: 1100px) {
+    h2{font-size:3.00em;}
+    p{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1em; line-height:1em;}
+    td.date{font-size:1em; padding-top:0.5em;}
+    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
+    table.footer{font-size:0.33em;}
+}
+ h1.h1-centre{
+    align: center;
+ }
+</style>
+
+<nav class="navbar">
+  <ul>
+    <li><a href="https://mindthegap2024.github.io/MindTheGap2024">Home</a></li>
+    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/About">About</a></li>
+
+      <li>  
+            <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts">Abstracts</a>
+              <ul>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Matthew-Bradley">Matthew Bradley</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Lorraine-Dennis">Lorraine Dennis</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Dominic-Harkin">Dominic Harkin</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Rita-Fulco">Rita Fulco</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Gorgone">Sandro Gorgone</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Marino">Caterina Marino</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Cahal-McLaughlin">Cahal McLaughlin</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Sinead-OSullivan">Sinead O’Sullivan</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Aisling-Reid">Aisling Reid</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Caterina-Resta">Caterina Resta</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Valentina-Surace">Valentina Surace</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Massimo-Villani">Massimo Villani</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Craig-Wallace">Craig Wallace</a></li>
+                  <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Abstracts#Siobahn-Willis">Siobahn Willis</a></li>
+
+              </ul>
+            </li>
+            <li>  
+              <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers">Speakers</a>
+                <ul>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Bradley-Speaker">Matthew Bradley</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Dennis-Speaker">Lorraine Dennis</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Fulco-Speaker">Rita Fulco</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Gorgone-Speaker">Sandro Gorgone</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Harkin-Speaker">Dominic Harkin</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Marino-Speaker">Caterina Marino</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Cahal-Speaker">Cahal McLaughlin</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Sinead-Speaker">Sinead O’Sullivan</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Aisling-Speaker">Aisling Reid</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Caterina-Resta-Speaker">Caterina Resta</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Valentina-Speaker">Valentina Surace</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Massimo-Speaker">Massimo Villani</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Craig-Speaker">Craig Wallace</a></li>
+                    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Speakers#Siobahn-Speaker">Siobahn Willis</a></li>
+
+                </ul>
+              </li>
+      <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog">Conference Programme</a>
+	      
+        <ul>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Morning-Session">Morning Session</a></li>
+          <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Conference_Prog#Afternoon-Session">Afternoon Session</a></li>
+          <li><a href="Final_Program.pdf" download>Download Programme</a></li>
+     <li><a href="Final_Poster.pdf" download>Download Poster</a></li>
+        </ul>
+	      
+    </li>
+    <li><a href="https://mindthegap2024.github.io/MindTheGap2024/Zoom_Link">Zoom Link</a></li>
+  </ul>
+</nav>
+
+	
+<body>
+
+</head>
+
+<body>
+
+  <h1 class="h1-sect-bg">Vulnerable Lives 2026</h1>
+  <h2 class="h2-sect-bg-1">Conference Speakers</h2>
+  <h2 class="section-title">Speakers</h2>
+
+  <table id="Aisling-Reid" class="speaker-table">
+    <tr>
+      <td class="Speaker" rowspan="3">
+        <h3 class="h3-sub-head">Aisling Reid</h3>
+      </td>
+      <td class="speaker-name"></td>
+    </tr>
+  </table>
+
+  <table id="Annamaria-Passaseo" class="speaker-table">
+    <tr>
+      <td class="Speaker" rowspan="3">
+        <h3 class="h3-sub-head">Annamaria Passaseo</h3>
+      </td>
+      <td class="speaker-name"></td>
+    </tr>
+  </table>
+
+  <table id="Caterina-Resta" class="speaker-table">
+    <tr>
+      <td class="Speaker" rowspan="3">
+        <h3 class="h3-sub-head">Caterina Resta</h3>
+      </td>
+      <td class="speaker-name"></td>
+    </tr>
+  </table>
+
+  <table id="Dominic-Harkin" class="speaker-table">
+    <tr>
+      <td class="Speaker" rowspan="3">
+        <h3 class="h3-sub-head">Dominic Harkin</h3>
+      </td>
+      <td class="speaker-name"></td>
+    </tr>
+  </table>
+
+  <table id="Elvira-Roncalli" class="speaker-table">
+    <tr>
+      <td class="Speaker" rowspan="3">
+        <h3 class="h3-sub-head">Elvira Roncalli</h3>
+      </td>
+      <td class="speaker-name"></td>
+    </tr>
+  </table>
+
+  <table id="Martine-Prange" class="speaker-table">
+    <tr>
+      <td class="Speaker" rowspan="3">
+        <h3 class="h3-sub-head">Martine Prange</h3>
+      </td>
+      <td class="speaker-name"></td>
+    </tr>
+  </table>
+
+  <table id="Rita-Fulco" class="speaker-table">
+    <tr>
+      <td class="Speaker" rowspan="3">
+        <h3 class="h3-sub-head">Rita Fulco</h3>
+      </td>
+      <td class="speaker-name"></td>
+    </tr>
+  </table>
+
+  <table id="Silvia-Benso" class="speaker-table">
+    <tr>
+      <td class="Speaker" rowspan="3">
+        <h3 class="h3-sub-head">Silvia Benso</h3>
+      </td>
+      <td class="speaker-name"></td>
+    </tr>
+  </table>
+
+  <table id="Valentina-Surace" class="speaker-table">
+    <tr>
+      <td class="Speaker" rowspan="3">
+        <h3 class="h3-sub-head">Valentina Surace</h3>
+      </td>
+      <td class="speaker-name"></td>
+    </tr>
+  </table>
+
+</body>
+
+    <div>
+<footer id="footer">
+  <div class="copyright">
+    <!-- First row for icons -->
+    <div class="contact">
+      <div class="contact-item">
+        <a href="https://www.qub.ac.uk">
+          <img src="https://www.wemakescholars.com/admin/uploads/providers/cbeVGa9KVNyYBS8_OXTXqYl5C73MTuNZ.webp" alt="QUB Icon">
+        </a>
+        <span>QUB</span>
+      </div>
+  
+      <div class="contact-item">
+        <a href="https://international.unime.it">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBlBt2j2OwlmmkVUqFX5jeXbVPx0S1u80kX-lncOtz1A&s" alt="Messina Icon">
+        </a>
+        <span>Università degli Studi di Messina<br>Dipartimento di Civilità Antiche e Moderne</span>
+      </div>
+  
+      <div class="contact-item">
+        <a href="https://archivio.unime.it/it/centri/cesmis">
+          <img src="https://github.com/MindTheGap2024/Conference2024/blob/main/Simbola.png?raw=true" alt="Simbola icon">
+        </a>
+        <span>Centro Europeo di <br>Studi su Mito e Simbolo</span>
+      </div>
+    </div>
+  </div>
+</footer>
+        
+      </div>
+
+</body>
+
+
+
+
+</html>
