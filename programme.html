@@ -8,14 +8,31 @@
 	<link rel="stylesheet" href="styles.css">
 
 	  <style>
-  background-color: #333; /* Set background color */
-  padding: 30px; /* Add padding to create space around the icons */
-footer {
-  text-align: center; /* Center-align the icons */
-  border-bottom: 50px;
+.section-with-bg {
+      background-image: url('Kafka-2.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 200vh; /* Adjust height as needed */
+      color: white; /* Set text color to contrast with background */
+      background-color: #333;
+    }
+
+.section-title {
+    font-size: 2em; /* Adjust size as needed */
+    text-align: left; /* Aligns text to the left */
+    margin: 10px 0; /* Adds some space above and below */
+    padding-left: 220px; /* Align with the speaker names */
+    font-weight: bold; /* Makes it stand out */
+    color: red;
 }
+
+    /* CSS for the section without background image */
+    .section-no-bg {
+      height: 100vh; /* Adjust height as needed */
+      background-color: #333; /* Set background color to whatever you want */
+    }
 #footer {
-  background-color: black; /* Change as needed */
+  background-color: #333; /* Change as needed */
   padding: 20px;
   text-align: center;
 }
@@ -45,20 +62,6 @@ footer {
   line-height: 1.2; /* Adjust line height for better spacing */
 }
 
-section-with-bg {
-      background-image: url('Kafka3.jpg');
-      background-size: cover;
-      background-position: center;
-      min-height: 200vh; /* Adjust height as needed */
-      color: white; /* Set text color to contrast with background */
-      background-color: #333;
-    }
-
-    /* CSS for the section without background image */
-    .section-no-bg {
-      height: 100vh; /* Adjust height as needed */
-      background-color: #333; /* Set background color to whatever you want */
-    }
 
 a{color: #b8860b; text-decoration:none;}
 a.current{color: #52739e;}
@@ -73,12 +76,6 @@ h3{font-size:1.67em;}
 h4{font-size:1.33em;}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
 
-h4-sect-session {
-  font-size: 2rem; /* Adjust as needed */
-  margin-top: 10px; /* Adds space between h1 and h2 */
-  text-align: center;
-  color: red !important;
-}
 
 i,em{font-style:italic;}
 b,strong{font-weight:bold;}
@@ -105,9 +102,20 @@ th,td{
     /*border: 1px solid black;*/
 }
 
-h1.h1-session-info{ text-align: center;
+h2.h2-session-info{ text-align: center;
     color: white;
+}
 
+speaker-table{
+    width: 100%; /* Ensure the table spans the full width of its container */
+}
+
+.Speaker {
+    width: 30%; /* Set the width of the first cell to 30% */
+}
+
+.speaker-name {
+    width: 70%; /* Set the width of the second cell to 70% */
 }
 
 /* The Table on the Program Page */
@@ -123,7 +131,7 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
 @media only screen and (max-width: 1100px) {
     h2{font-size:3.00em;}
     p{font-size:1.5em; line-height:1.5em;}
-    th,td,tr{font-size:1.5em; line-height:1.5em;}
+    th,td,tr{font-size:1em; line-height:1em;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
@@ -131,33 +139,6 @@ td.abstract img{display: block; margin: 4px auto 8px auto}
  h1.h1-centre{
     align: center;
  }
-
- .navbar {
-  background-color: #333;
-  position: relative;
-  z-index: 999;
-  text-align: center;
-  vh:100px;
- }
-
- ul.special-items li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background: #333;
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-.center-a{
-    text-align: center;
-    font-size: 20px;
-}
 
 </style>
 
