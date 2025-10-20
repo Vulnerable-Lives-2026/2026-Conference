@@ -18,35 +18,39 @@ p.p-img-right{font-size: 20px;
       font-family:"Calibri", sans-serif;
 		}
 
-    footer {
-  background-color: #333; /* Set background color */
-  padding: 30px; /* Add padding to create space around the icons */
-  text-align: center; /* Center-align the icons */
-  border-bottom: 50px;
+    .logo {
+      font-size: 1.5em;
+      color: white;
+    }
+#footer {
+  background-color: #333; /* Change as needed */
+  padding: 20px;
+  text-align: center;
 }
 
-		.contact {
+.contact {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px; /* spacing between logos */
-  flex-wrap: wrap; /* wrap on small screens */
-  margin-top: 20px;
+  justify-content: space-around; /* Distributes space evenly */
+  flex-wrap: wrap; /* Allows items to wrap if necessary */
 }
 
 .contact-item {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: white;
-  max-width: 180px;
+  flex-direction: column; /* Aligns image and label vertically */
+  align-items: center; /* Centers items horizontally */
+  margin: 10px; /* Adds spacing between items */
+}
+
+.contact-item img {
+  height: 90px; /* Adjust height as needed */
+  width: 90px; /* Adjust width as needed */
+  margin-bottom: 5px; /* Adds space between the image and label */
 }
 
 .contact-item span {
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.3;
+  text-align: center; /* Centers the label text */
+  font-size: 14px; /* Adjust font size if needed */
+  line-height: 1.2; /* Adjust line height for better spacing */
 }
 
 
