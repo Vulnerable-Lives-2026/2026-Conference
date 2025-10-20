@@ -151,8 +151,42 @@ img.img-right {
 
 .container {
 	display: flex;
+	flex-wrap: wrap;
   align-items: stretch;
 }
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .img-container,
+  .text-container,
+  .text-container-index {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .image-left img,
+  .image-right img,
+  .img-left,
+  .img-right {
+    max-width: 100%;
+    height: auto;
+    float: none; /* stop floating on mobile */
+    margin: 1em 0;
+  }
+
+  .navbar li {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar ul ul {
+    position: static;
+  }
+}
+
 
 .text-container {
   flex: 2;
